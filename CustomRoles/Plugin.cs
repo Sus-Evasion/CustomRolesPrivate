@@ -60,6 +60,7 @@ public class Plugin : Plugin<Config>
         Config.RoleConfigs.TankZombies.Register();
         Config.RoleConfigs.ChaosMedics.Register();
         Config.RoleConfigs.ChaosScouts.Register();
+        Config.RoleConfigs.ChaosJammers.Register();
 
 
 
