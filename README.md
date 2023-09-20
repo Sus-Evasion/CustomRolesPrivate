@@ -23,6 +23,9 @@ Chaos Phantom | 10 | ActiveCamo | Immediately when a round begins | A Chaos Cons
 Plague Zombie | 11 | Projectile, MoveSpeedReduction | Randomly when revived by SCP-049 | A slow zombie that does very little melee damage. Projectiles they shoot do not deal immediate damage like normal, instead they will poison any humans hit. Humans who die wile poisoned will turn into an instance of SCP-049-2.
 SCP-575 | 12 | Blackout | Immediately when a round begins | See the 575 section below.
 Juggernaut Zombie | 13 | ReactiveHume, MoveSpeedReduction | Randomly when revived by SCP-049 | A very tanky zombie capable of living through enourmous amounts of damage.
+Chaos Medic | Medic | 14 | HealingMist | During NTF Respawn waves | A Chaos Repressor who spawns with a Medigun, Tranqgun, EMP Grenade, Medkit, Adrenaline, Painkillers and Lt. Keycard. Can use their ability to heal nearby allies. *
+Chaos scout | 15 | Sprint, MoveSpeedBoost | During Chaos Respawn waves |  A Chaos Rifleman who spawns with a A7, Combat Armor, Flash Grenade, ChaosInsurgency Keycard and SCP-500 with lower hp, faster speed and ability to sprint faster in short duration.
+Chaos Jammer | 16 | Jammer | During Chaos Respawn waves |  A Chaos Rifleman who spawns with default loadout with the ability to disable SCP 079 for 8 seconds.
 
 
 ### Ability List
@@ -39,3 +42,5 @@ MoveSpeedReduction | Passive | N/A | N/A | Slows the player's movement speed by 
 Projectile | Active | N/A | 35s | Launches a projectile in the direction the player is facing. Upon reaching it's destination, it will explode like a grenade.
 ReactiveHume | Passive | N/A | N/A | A special type of Hume shield that degenerates over time, instead of regenerating. When the player takes damage, the hume will gain 75% of the raw damage before any reductions are applied. Damage taken by the player is reduced based on how full the hume is, up to 80% reduction when the hume is full. The damage reduction calculation is done **PRIOR** to the hume gaining value from the attack.
 SpeedOnKill | Passive | 5s | N/A | When the player kills another player, they will gain an intensity level of SCP-207 for the duration. This effect can stack multiple times, up to the configured limit. Getting kills while at the intensity limit will NOT refresh the duration.
+Jammer | Active | 0.1s | 180s | Launches a SCP 2176 at targeted location
+Sprint | Active | 10s | 90s | Player gains unlimited sprint within ability duration and runs even faster
