@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qIGBr0D8PqJ0VQvNF2e8hTEUhfQ41SS3ymFiHfN1+VIRYmvto1U3Ffy3rJL+5zo8pO61eSdpz2BZlNqoZVNc5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lmalo\\source\\repos\\CustomRoles\\CustomRoles\\CustomRoles.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lmalo\\.nuget\\packages\\exiled\\8.2.1\\exiled.8.2.1.nupkg.sha512",
+    "C:\\Users\\lmalo\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512",
+    "C:\\Users\\lmalo\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}

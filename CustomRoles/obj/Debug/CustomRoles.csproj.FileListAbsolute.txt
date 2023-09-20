@@ -1,0 +1,9 @@
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\obj\Debug\CustomRoles.csproj.AssemblyReference.cache
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\obj\Debug\CustomRoles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\obj\Debug\CustomRoles.AssemblyInfoInputs.cache
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\obj\Debug\CustomRoles.AssemblyInfo.cs
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\obj\Debug\CustomRoles.csproj.CoreCompileInputs.cache
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\bin\Debug\CustomRoles.dll
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\bin\Debug\CustomRoles.pdb
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\obj\Debug\CustomRoles.dll
+C:\Users\lmalo\source\repos\CustomRoles\CustomRoles\obj\Debug\CustomRoles.pdb
