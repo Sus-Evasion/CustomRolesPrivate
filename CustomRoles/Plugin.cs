@@ -1,4 +1,6 @@
 #nullable enable
+using UnityEngine;
+
 namespace CustomRoles;
 
 using System;
@@ -61,8 +63,7 @@ public class Plugin : Plugin<Config>
         Config.RoleConfigs.ChaosMedics.Register();
         Config.RoleConfigs.ChaosScouts.Register();
         Config.RoleConfigs.ChaosJammers.Register();
-
-
+        Config.RoleConfigs.GuardZombies.Register();
 
         foreach (CustomRole role in CustomRole.Registered)
         {
