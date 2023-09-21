@@ -64,19 +64,24 @@ public class Roles
     {
         new TankZombie(),
     };
-    
+
     public List<ChaosJammer> ChaosJammers { get; set; } = new()
     {
         new ChaosJammer(),
     };
-    
+
     public List<ChaosMedic> ChaosMedics { get; set; } = new()
     {
         new ChaosMedic(),
     };
-    
+
     public List<ChaosScout> ChaosScouts { get; set; } = new()
     {
         new ChaosScout(),
+    };
+
+    public List<GuardZombie> GuardZombies { get; set; } = new()
+    {
+        new GuardZombie(),
     };
 }
