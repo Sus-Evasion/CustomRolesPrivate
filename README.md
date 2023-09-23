@@ -1,4 +1,4 @@
-# CustomRoles
+# CustomRoles [SFW version]
 ==============
 ## Description
 This plugin makes use of Exiled.CustomRoles to add new playable roles into the game. These roles have custom inventories, health, objectives and abilities.
