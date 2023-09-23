@@ -22,7 +22,7 @@ PD Zombie | 9 | None | Randomly when revived by SCP-049 | A zombie that takes si
 Chaos Phantom | 10 | ActiveCamo | Immediately when a round begins | A Chaos Conscript that takes the place of one of the facility guards when the round starts. They spawn with a Sniper Rifle, Implosion Grenade, EMP Grenade, SCP-127, Medkit, Adrenaline and Chaos Insurgency Device. Can periodically become completely invisible. *
 Plague Zombie | 11 | Projectile, MoveSpeedReduction | Randomly when revived by SCP-049 | A slow zombie that does very little melee damage. Projectiles they shoot do not deal immediate damage like normal, instead they will poison any humans hit. Humans who die wile poisoned will turn into an instance of SCP-049-2.
 SCP-575 | 12 | Blackout | Immediately when a round begins | See the 575 section below.
-Juggernaut Zombie | 13 | ReactiveHume, MoveSpeedReduction | Randomly when revived by SCP-049 | A very tanky zombie capable of living through enourmous amounts of damage.
+Juggernaut Zombie | 13 | HumeGenerator, MoveSpeedReduction | Randomly when revived by SCP-049 | A very tanky zombie capable of spraying bio-chemicals to strengthen its own team and harden its own skin.
 Chaos Medic | 14 | Medic | HealingMist | During NTF Respawn waves | A Chaos Repressor who spawns with a Medigun, Tranqgun, EMP Grenade, Medkit, Adrenaline, Painkillers and Lt. Keycard. Can use their ability to heal nearby allies. *
 Chaos scout | 15 | Sprint, MoveSpeedBoost | During Chaos Respawn waves |  A Chaos Rifleman who spawns with a A7, Combat Armor, Flash Grenade, ChaosInsurgency Keycard and SCP-500 with lower hp, faster speed and ability to sprint faster in short duration.
 Chaos Jammer | 16 | Jammer | During Chaos Respawn waves |  A Chaos Rifleman who spawns with default loadout with the ability to disable SCP 079 for 8 seconds.
@@ -40,7 +40,7 @@ HealOnKill | Passive | Up to 10s | N/A | Heals the player for 2.5 health every s
 Martyrdom | Passive | N/A | N/A | When the player dies, an HE grenade will explode on their corpse.
 MoveSpeedReduction | Passive | N/A | N/A | Slows the player's movement speed by 30%.
 Projectile | Active | N/A | 35s | Launches a projectile in the direction the player is facing. Upon reaching it's destination, it will explode like a grenade.
-ReactiveHume | Passive | N/A | N/A | A special type of Hume shield that degenerates over time, instead of regenerating. When the player takes damage, the hume will gain 75% of the raw damage before any reductions are applied. Damage taken by the player is reduced based on how full the hume is, up to 80% reduction when the hume is full. The damage reduction calculation is done **PRIOR** to the hume gaining value from the attack.
+HumeGenerator | Active |  15s | 3min | Every 1 second for the duration, all friendly players within 12ft of the user will gain 3 hume shield. When the duration expires, any allies within that range are also given 50 HP. Neither the hume generated, nor the HP are applied to the user of this ability, however they will be granted 500 hume shield.
 SpeedOnKill | Passive | 5s | N/A | When the player kills another player, they will gain an intensity level of SCP-207 for the duration. This effect can stack multiple times, up to the configured limit. Getting kills while at the intensity limit will NOT refresh the duration.
 Jammer | Active | 0.1s | 180s | Launches a SCP 2176 at targeted location
 Sprint | Active | 10s | 90s | Player gains unlimited sprint within ability duration and runs even faster
