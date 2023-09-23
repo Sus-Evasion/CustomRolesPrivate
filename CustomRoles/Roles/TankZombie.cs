@@ -25,7 +25,7 @@ public class TankZombie : CustomRole, ICustomRole
 
     public override RoleTypeId Role { get; set; } = RoleTypeId.Scp0492;
 
-    public override int MaxHealth { get; set; } = 1100;
+    public override int MaxHealth { get; set; } = 700;
 
     public override string Name { get; set; } = "Juggernaut Zombie";
 
@@ -39,24 +39,9 @@ public class TankZombie : CustomRole, ICustomRole
         Limit = 1,
     };
 
-    [Description(
-        "The maximum value of his hume shield. Higher values take longer for the hume to fill, meaning he takes more damage before reaching the maximum reduction from his shield.")]
-    public int HumeMax { get; set; } = 500;
-
-    [Description("The rate at which his hume shield will decay.")]
-    public float HumeDecayRate { get; set; } = 2.5f;
-
     public override List<CustomAbility>? CustomAbilities { get; set; } = new()
     {
-        new ReactiveHume(),
+        new HumeGenerator(),
         new MoveSpeedReduction(),
     };
-
-    protected override void RoleAdded(Player player)
-    {
-        Log.Debug($"{Name}: Setting Max AHP and Decay");
-
-        // Please work
-        ((AhpStat)player.ReferenceHub.playerStats.StatModules[1]).ServerAddProcess(0, HumeMax, HumeDecayRate, 10f, 0f, true);
-    }
 }
