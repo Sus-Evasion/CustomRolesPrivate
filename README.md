@@ -21,11 +21,10 @@ Medic Zombie | 8 | HealingMist, MoveSpeedReduction | Randomly when revived by SC
 PD Zombie | 9 | None | Randomly when revived by SCP-049 | A zombie that takes significantly less ballistic damage, but if extremely vulnerable to flash grenades. Has a small chance to teleport players to the Pocket Dimension when attacking.
 Chaos Phantom | 10 | ActiveCamo | Immediately when a round begins | A Chaos Conscript that takes the place of one of the facility guards when the round starts. They spawn with a Sniper Rifle, Implosion Grenade, EMP Grenade, SCP-127, Medkit, Adrenaline and Chaos Insurgency Device. Can periodically become completely invisible. *
 Plague Zombie | 11 | Projectile, MoveSpeedReduction | Randomly when revived by SCP-049 | A slow zombie that does very little melee damage. Projectiles they shoot do not deal immediate damage like normal, instead they will poison any humans hit. Humans who die wile poisoned will turn into an instance of SCP-049-2.
-SCP-575 | 12 | Blackout | Immediately when a round begins | See the 575 section below.
-Juggernaut Zombie | 13 | HumeGenerator, MoveSpeedReduction | Randomly when revived by SCP-049 | A very tanky zombie capable of spraying bio-chemicals to strengthen its own team and harden its own skin.
-Chaos Medic | 14 | Medic | HealingMist | During NTF Respawn waves | A Chaos Repressor who spawns with a Medigun, Tranqgun, EMP Grenade, Medkit, Adrenaline, Painkillers and Lt. Keycard. Can use their ability to heal nearby allies. *
-Chaos scout | 15 | Sprint, MoveSpeedBoost | During Chaos Respawn waves |  A Chaos Rifleman who spawns with a A7, Combat Armor, Flash Grenade, ChaosInsurgency Keycard and SCP-500 with lower hp, faster speed and ability to sprint faster in short duration.
-Chaos Jammer | 16 | Jammer | During Chaos Respawn waves |  A Chaos Rifleman who spawns with default loadout with the ability to disable SCP 079 for 8 seconds.
+Juggernaut Zombie | 12 | HumeGenerator, MoveSpeedReduction | Randomly when revived by SCP-049 | A very tanky zombie capable of spraying bio-chemicals to strengthen its own team and harden its own skin.
+Chaos Medic | 13 | Medic | HealingMist | During NTF Respawn waves | A Chaos Repressor who spawns with a Medigun, Tranqgun, EMP Grenade, Medkit, Adrenaline, Painkillers and Lt. Keycard. Can use their ability to heal nearby allies. *
+Chaos scout | 14 | Sprint, MoveSpeedBoost | During Chaos Respawn waves |  A Chaos Rifleman who spawns with a A7, Combat Armor, Flash Grenade, ChaosInsurgency Keycard and SCP-500 with lower hp, faster speed and ability to sprint faster in short duration.
+Chaos Jammer | 15 | Jammer | During Chaos Respawn waves |  A Chaos Rifleman who spawns with default loadout with the ability to disable SCP 079 for 8 seconds.
 
 
 ### Ability List
