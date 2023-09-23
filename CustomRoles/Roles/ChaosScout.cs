@@ -22,7 +22,7 @@ public class ChaosScout : CustomRole, ICustomRole
 
     public StartTeam StartTeam { get; set; } = StartTeam.Chaos;
 
-    public override uint Id { get; set; } = 15;
+    public override uint Id { get; set; } = 14;
 
     public override RoleTypeId Role { get; set; } = RoleTypeId.ChaosRifleman;
 
