@@ -33,11 +33,12 @@ public class ChaosScout : CustomRole, ICustomRole
     public override string Description { get; set; } =
         "A Chaos Scout which runs faster & has ability to run even faster";
 
+    /// <inheritdoc/>
     public override string CustomInfo { get; set; } = "Chaos Scout";
 
     public override SpawnProperties SpawnProperties { get; set; } = new()
     {
-        Limit = 1,
+        Limit = 2,
         RoleSpawnPoints = new List<RoleSpawnPoint>
         {
             new()
@@ -74,7 +75,6 @@ public class ChaosScout : CustomRole, ICustomRole
     protected override void SubscribeEvents()
     {
         Log.Debug($"{nameof(SubscribeEvents)}: Loading medic events..");
-        Player.PickingUpItem += OnPickingUpItem;
         base.SubscribeEvents();
     }
 
