@@ -84,4 +84,9 @@ public class Roles
     {
         new GuardZombie(),
     };
+
+    public List<RedRightHand> RedRightHands { get; set; } = new()
+    {
+        new RedRightHand(),
+    };
 }
