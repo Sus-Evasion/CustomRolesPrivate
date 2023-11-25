@@ -25,6 +25,7 @@ Juggernaut Zombie | 12 | HumeGenerator, MoveSpeedReduction | Randomly when reviv
 Chaos Medic | 13 | Medic | HealingMist | During NTF Respawn waves | A Chaos Repressor who spawns with a Medigun, Tranqgun, EMP Grenade, Medkit, Adrenaline, Painkillers and Lt. Keycard. Can use their ability to heal nearby allies. *
 Chaos scout | 14 | Sprint, MoveSpeedBoost | During Chaos Respawn waves |  A Chaos Rifleman who spawns with a A7, Combat Armor, Flash Grenade, ChaosInsurgency Keycard and SCP-500 with lower hp, faster speed and ability to sprint faster in short duration.
 Chaos Jammer | 15 | Jammer | During Chaos Respawn waves |  A Chaos Rifleman who spawns with default loadout with the ability to disable SCP 079 for 8 seconds.
+Red Right Hand | 16 | None | Immeiately when a round begins (15% chance) |serves as the O5 Council's special operations unit.
 
 
 ### Ability List
