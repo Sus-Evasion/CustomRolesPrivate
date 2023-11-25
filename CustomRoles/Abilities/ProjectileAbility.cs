@@ -62,7 +62,7 @@ public class ProjectileAbility : ActiveAbility
             body.useGravity = false;
             body.isKinematic = false;
             Log.Debug("Starting throw");
-            Timing.RunCoroutine(DoLerpArc(pickup, target));
+            Timing.RunCoroutine(DoLerpArc(pickup, target, player));
         }
     }
 
@@ -72,7 +72,7 @@ public class ProjectileAbility : ActiveAbility
         return Physics.Raycast(player.Position + forward, forward, out hit, 200f, StandardHitregBase.HitregMask);
     }
 
-    private IEnumerator<float> DoLerpArc(Pickup pickup, Vector3 target)
+    private IEnumerator<float> DoLerpArc(Pickup pickup, Vector3 target, Player player)
     {
         bool deleted = false;
         Vector3 startPosition = pickup.Position;
@@ -108,7 +108,7 @@ public class ProjectileAbility : ActiveAbility
             if (progress >= 1.0f)
             {
                 Log.Debug("Arrived");
-                Arrived(target);
+                Arrived(target, player);
                 pickup.Destroy();
                 deleted = true;
             }
@@ -117,9 +117,9 @@ public class ProjectileAbility : ActiveAbility
         }
     }
 
-    private void Arrived(Vector3 target)
+    private void Arrived(Vector3 target, Player player)
     {
-        ExplosiveGrenade grenade = (ExplosiveGrenade)Item.Create(ItemType.GrenadeHE);
+        ExplosiveGrenade grenade = (ExplosiveGrenade)Item.Create(ItemType.GrenadeHE, owner: player);
         grenade.FuseTime = 0.5f;
         PlagueZombie.Grenades.Add(grenade.Serial);
         grenade.SpawnActive(target);
