@@ -82,7 +82,7 @@ public class PlagueZombie : CustomRole, ICustomRole
         foreach (Exiled.API.Features.Player player in ev.TargetsToAffect)
         {
             if (player.Role.Team == Team.SCPs || (player.Position - ev.Projectile.Transform.position).sqrMagnitude > 200)
-                continue;
+                return;
             player.Hurt(new UniversalDamageHandler(30f, DeathTranslations.Poisoned));
             player.EnableEffect(EffectType.Poisoned, 25f);
         }
