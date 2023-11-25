@@ -1,5 +1,7 @@
 #nullable enable
-using System;
+
+using Exiled.API.Enums;
+using Exiled.API.Extensions;
 
 namespace CustomRoles.Abilities;
 
@@ -11,9 +13,9 @@ using Exiled.Events.Handlers;
 using Item = Exiled.API.Features.Items.Item;
 
 [CustomAbility]
-public class Martyrdom : PassiveAbility
+public class SuicideBomb : PassiveAbility
 {
-    public override string Name { get; set; } = "Martyrdom";
+    public override string Name { get; set; } = "Suicide Bomb";
 
     public override string Description { get; set; } = "Causes the player to explode upon death.";
 
@@ -32,6 +34,9 @@ public class Martyrdom : PassiveAbility
     private void OnDying(DyingEventArgs ev)
     {
         if (Check(ev.Player))
-            ((ExplosiveGrenade)Item.Create(ItemType.GrenadeHE)).SpawnActive(ev.Player.Position, ev.Player);
+        {
+            ExplosiveGrenade grenade = (ExplosiveGrenade)Item.Create(ItemType.GrenadeHE, owner: ev.Player);
+            grenade.SpawnActive(ev.Player.Position, ev.Player);
+        }
     }
 }
