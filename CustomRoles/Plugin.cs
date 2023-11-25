@@ -1,6 +1,3 @@
-#nullable enable
-using UnityEngine;
-
 namespace CustomRoles;
 
 using System;
@@ -28,18 +25,23 @@ public class Plugin : Plugin<Config>
 
     public List<Player> StopRagdollList { get; } = new ();
 
+    /// <inheritdoc/>
     public override string Author { get; } = "Galaxy119";
 
+    /// <inheritdoc/>
     public override string Name { get; } = "CustomRoles";
 
+    /// <inheritdoc/>
     public override string Prefix { get; } = "CustomRoles";
 
+    /// <inheritdoc/>
     public override Version RequiredExiledVersion { get; } = new (8, 0, 0);
 
     public Methods Methods { get; private set; } = null!;
 
-    public EventHandlers EventHandlers { get; private set; } = null!;
+    private EventHandlers EventHandlers { get; set; } = null!;
 
+    /// <inheritdoc/>
     public override void OnEnabled()
     {
         Singleton = this;
@@ -64,6 +66,7 @@ public class Plugin : Plugin<Config>
         Config.RoleConfigs.ChaosScouts.Register();
         Config.RoleConfigs.ChaosJammers.Register();
         Config.RoleConfigs.GuardZombies.Register();
+        Config.RoleConfigs.RedRightHands.Register();
 
         foreach (CustomRole role in CustomRole.Registered)
         {
@@ -111,6 +114,7 @@ public class Plugin : Plugin<Config>
         base.OnEnabled();
     }
 
+    /// <inheritdoc/>
     public override void OnDisabled()
     {
         CustomRole.UnregisterRoles();
